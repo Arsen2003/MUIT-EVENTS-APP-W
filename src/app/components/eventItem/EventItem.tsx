@@ -24,8 +24,8 @@ export default function EventItem({
   location,
   id,
 }: EventPropsType) {
-  
-  console.log(id, text)
+
+
   return (
     <div className={styles.item}>
       <span>{title}</span>

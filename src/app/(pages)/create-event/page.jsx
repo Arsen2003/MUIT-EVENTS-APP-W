@@ -36,7 +36,7 @@ export default function CreateEvent() {
     const existingEvents = JSON.parse(localStorage.getItem('events') || '[]')
     const updatedEvents = [...existingEvents, updatedEventData]
     localStorage.setItem('events', JSON.stringify(updatedEvents))
-    console.log(updatedEventData)
+  
     setEventData({
       id: '',
       title: '',
@@ -50,7 +50,7 @@ export default function CreateEvent() {
       accessCode: '',
     })
 
-    redirect('/events') 
+    redirect('/events')
   }
   return (
     <main className={styles.main}>
