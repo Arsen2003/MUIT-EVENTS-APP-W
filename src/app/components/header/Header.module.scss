@@ -1,0 +1,121 @@
+.header {
+  width: 100%;
+  padding: 15px 0px;
+  background-color: var(--background-start);
+  position: relative;
+}
+
+.header_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  > span {
+    font-size: 0.813rem;
+    font-weight: 800;
+    color: var(--font-color-start);
+    white-space: nowrap;
+  }
+}
+
+.header_nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  > a {
+    font-weight: 300;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: var(--font-color-start);
+    white-space: nowrap;
+    &:hover {
+      color: var(--background-green);
+    }
+  }
+}
+
+.login__button {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  padding: 14px 26px;
+  font-weight: 300;
+  font-size: 1.25rem;
+  background-color: var(--background-green);
+  color: white;
+  border-radius: 5px;
+  white-space: nowrap;
+  &:hover {
+    background-color: #009570da;
+  }
+}
+
+.burger_menu {
+  display: none;
+  padding: 14px 26px;
+  background-color: transparent;
+  color: var(--background-green);
+  font-size: 1.25rem;
+  border: 2px solid var(--background-green);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1240px) {
+  .header_control {
+    display: flex;
+    gap: 10px;
+  }
+  .header_nav {
+    display: none;
+  }
+  .burger_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 26px;
+    background-color: transparent;
+    color: var(--background-green);
+    border: 2px solid var(--background-green);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    > span {
+      font-size: 0.813rem;
+      font-weight: 800;
+      color: var(--font-color-start);
+      white-space: nowrap;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .login__button {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    padding: 5px 8px;
+    font-weight: 300;
+    font-size: 1rem;
+    background-color: var(--background-green);
+    color: white;
+    border-radius: 5px;
+    white-space: nowrap;
+  }
+  .burger_menu {
+    padding: 10px 5px;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,31 @@
+.hero_section {
+  > h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  padding: 120px 0px;
+  gap: 39px;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--font-color-start);
+}
+
+@media screen and (max-width: 780px) {
+  .hero_section {
+    
+    > h1 {
+      font-size: 1rem;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+    padding: 120px 0px;
+    gap: 39px;
+    font-size: 0, 6rem;
+    font-weight: 300;
+    color: var(--font-color-start);
+    > p {
+      text-decoration: center;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.aside {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--background-start);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  > a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--font-color-start);
+  }
+  > button {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--font-color-start);
+    background-color: transparent;
+    border: none;
+  }
+}

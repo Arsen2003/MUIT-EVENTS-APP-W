@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  width: 100%;
+  padding: 120px 0px;
+}
+
+.hero_section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  > h1 {
+    font-weight: 300;
+    font-size: 3rem;
+    color: var(--font-color-start);
+  }
+  &_items {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+  }
+}
